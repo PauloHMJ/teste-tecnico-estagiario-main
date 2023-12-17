@@ -4,9 +4,7 @@ Este README contém soluções para as quatro questões de programação em Reac
 
 ##Referências
   - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-  - [React](https://react.dev/)
   - [React](https://react.dev/).
-
 
 
 ### Questões e Implementação
