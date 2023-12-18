@@ -14,7 +14,7 @@ export default function Questao1() {
 
   return (
     <>
-    <h1>Questão</h1>
+    <h1>Questão 1</h1>
 
       <button style={{backgroundColor: 'Red',
     borderRadius: '10px',
@@ -23,7 +23,7 @@ export default function Questao1() {
     cursor: 'pointer'}}
     onClick={handleClick}>Clique-me!</button>
 
-    {botaoclicado && <p>'O botão "Clique-me!" foi clicado</p>}
+    {botaoclicado && <p>Você clicou no botão!</p>}
 
 
 
