@@ -20,10 +20,11 @@ const Diminuir = () =>{
     <>
       <h1>Questão 2</h1>
 
-      <p>O valor do cantador é: {counter}</p>
+      <p>O valor do cantador é: {contador}</p>
 
-      <button onClick={Aumentar}>Incrementar</button>
       <button onClick={Diminuir}>Decrementar</button>
+      <button onClick={Aumentar}>Incrementar</button>
+      
 
 
       {/*<p>
