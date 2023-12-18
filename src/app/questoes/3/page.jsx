@@ -1,30 +1,47 @@
 import React from "react";
 
-const numerosInteiros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const produtos = [
+  {
+    id: 1,
+    nome: "Camiseta",
+    preco: 10.99,
+  },
+  {
+    id: 2,
+    nome: "Calça",
+    preco: 19.99,
+  },
+  {
+    id: 3,
+    nome: "Saia",
+    preco: 19.99,
+  },
+];
 
-const CalcularSomaPares = (numeros) => {
-  return numeros.reduce((soma, numero) => {
-    if (numero % 2 === 0) {
-      return soma + numero;
-    }
-    return soma;
-  }, 0);
+const ProductList = ({produtos}) => {
+  return (
+    <ul>
+      {produtos.map((produto) => (
+        <li key={produto.id}>
+          <strong>{produto.nome}</strong> - R${produto.preco.toFixed(2)}
+        </li>
+      ))}
+    </ul>
+  );
 };
 
-export default function Questao3() {
-  const somaPares = CalcularSomaPares(numerosInteiros);
-
+export default function Questao4() {
   return (
     <>
-      <h1>Questão 3</h1>
+      <h1>Questão 4</h1>
 
+      <ProductList produtos={produtos} />
 
-      <p>Soma dos números pares: {somaPares}</p>
-
-           {/* <p>
-        Escreva uma função JavaScript que recebe uma matriz de números inteiros
-        e retorna a soma de todos os números pares. Exiba a soma na tela.
-      </p> */}
+     {/* <p>
+        Crie um componente chamado `ProductList` que recebe uma matriz de
+        objetos de produto e renderiza uma lista de produtos. Cada produto deve
+        exibir seu nome e preço.
+  </p>*/}
     </>
   );
 }
